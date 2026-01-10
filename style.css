@@ -1,6 +1,8 @@
 * {
    margin:0;
    padding:0;
+   text-align:center;
+   background-color:black;
 }
 
 .game-div {
@@ -9,22 +11,60 @@
    display:flex;
    justify-content:center;
    align-items:center;
-   gap:2rem;
+   gap:4rem;
+   margin-bottom:80px;
 }
 
 .game-title {
-    background-color:black;
-    color:red;
+    background-color:red;
+    color:white;
     font-size:8vmin;
-    text-align:center;
+    /* trick jitni height ha unti line height de do text ko to vertically center heading  */
+    line-height:5rem;
 }
 
 .game-btn {
-   padding:20px;
-   border-radius:100px;
+   height:200px;
+   width:200px;
+   border-radius:50%;
    border:none;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+
+.game-btn:hover {
+   cursor:pointer;
+   background-color:red;
 }
 
 img {
-   height:80px;
+   height:150px;
+   object-fit:cover;
+   border-radius:5rem;
 }
+
+.score-board {
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   margin-bottom:50px;
+   gap:4rem;
+   font-size:3rem;
+}
+
+.message-container {
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+
+#msg {
+   font-size:3rem;
+   background-color:red;
+   color:white;
+   padding:15px;
+   border-radius:4rem;
+}
+
+
