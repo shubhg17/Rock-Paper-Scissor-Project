@@ -30,38 +30,47 @@ const gameDraw = ()=> {
     msg.style.backgroundColor = "red"
 }
 
+const showWinner = (userWin , userChoice , compChoice) => {
+     if(userWin) {
+         userScore++;
+         userScoreValue.innerText = userScore
+         console.log("you win")
+         msg.innerText = `You win! Your ${userChoice} beats ${compChoice} `
+         msg.style.backgroundColor = "green"
+     }
+     else {
+         compScore++;
+         compScoreValue.textContent = compScore
+         console.log("You lost!")
+         msg.innerText = `You lose! Your ${compChoice} beats your ${userChoice}`
+         msg.style.backgroundColor = "red";
+     }
+}
+
 
 const playGame = (userChoice)=> {
       console.log(`User Choice: ${userChoice}`)
       const compChoice = computerChoice()
       console.log(`Computer Choice: ${compChoice}`)
      
-     if(userChoice === "rock" && compChoice === "paper") {
-        console.log("Winner is User")
-        msg.innerHTML = `You Win! Your ${userChoice} beats ${compChoice}`
-        msg.style.backgroundColor = "green"
-        userScore++;
-        userScoreValue.innerText = userScore;
-     }
-
-     if(userChoice === "paper" && compChoice === "scissor") {
-         console.log("Winner is Computer")
-         msg.textContent = `You Lose! ${compChoice} beats your ${userChoice}`
-         msg.style.backgroundColor = "violet"
-         compScore++;
-         compScoreValue.innerHTML = compScore;
-     }
-
-     if(userChoice === "rock" && compChoice === "scissor") {
-         console.log("Winner is User")
-         msg.innerText = `You Win! Your ${userChoice} beats ${compChoice}`
-         msg.style.backgroundColor = "green"
-         userScore++;
-         userScoreValue.textContent = userScore;
-     }
-
      if(userChoice === compChoice) {
          gameDraw()
+     }
+     else {
+         let userWin = true;
+         if(userChoice === "rock") {
+             //scissor , paper
+             userWin = compChoice ==="paper"?false:true;
+         }
+         else if(userChoice === "paper") {
+             //rock , scissor
+             userWin = compChoice ==="scissor"?false:true;
+         }
+         else {
+             //rock , paper
+             userWin = compChoice === "rock"? false:true;
+         }
+         showWinner(userWin , userChoice , compChoice)
      }
 
 }
