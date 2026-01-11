@@ -2,7 +2,6 @@
    margin:0;
    padding:0;
    text-align:center;
-   background-color:black;
 }
 
 .game-div {
@@ -16,7 +15,7 @@
 }
 
 .game-title {
-    background-color:red;
+    background-color:black;
     color:white;
     font-size:8vmin;
     /* trick jitni height ha unti line height de do text ko to vertically center heading  */
