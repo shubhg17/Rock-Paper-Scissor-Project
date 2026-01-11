@@ -1,11 +1,11 @@
-## ✊✋✌️ Rock Paper Scissors (HTML, CSS & JavaScript)
+# ✊✋✌️ Rock Paper Scissors (HTML, CSS & JavaScript)
 
 A simple and interactive Rock Paper Scissors web game where the user plays against the computer.
 This project is ideal for beginners to practice JavaScript logic, DOM manipulation, and event handling.
 
 ---
 
-# 🚀 Features
+##  🚀 Features
 
 User vs Computer gameplay
 
@@ -21,7 +21,7 @@ Simple and beginner-friendly UI
 
 ---
 
-# 📁 File Structure
+##  📁 File Structure
 rock-paper-scissors/
 ├── index.html
 ├── style.css
@@ -30,7 +30,7 @@ rock-paper-scissors/
 
 ---
 
-# 🛠 Technologies Used
+##  🛠 Technologies Used
 
 HTML5 – Structure of the game
 
@@ -40,7 +40,7 @@ JavaScript (ES6) – Game logic, DOM manipulation, and event handling
 
 ---
 
-# 🔧 How to Run
+##  🔧 How to Run
 
 - Clone the repository:
 ```
@@ -58,7 +58,7 @@ cd rock-paper-scissors
 
 ---
 
-# 📌 Game Rules
+##  📌 Game Rules
 
 - Rock beats Scissor
 
@@ -70,7 +70,7 @@ cd rock-paper-scissors
 
 ---
 
-# 📌 Notes
+##  📌 Notes
 
 This project focuses on:
 
@@ -92,6 +92,6 @@ Match history or round counter
 
 ---
 
-# 👨‍💻 Author
+##  👨‍💻 Author
 
 Made by Shubham Ghai
